@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Evelina Garcia Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey|Nunito|Poppins">
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <br>
+        <br>
+        
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="Images/Video/video_1.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your brower does not support HTML5 video.
+            </video>
+        </div> 
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">Evelina Garcia's Portfolio</h1>
+            <strong>
+               <p class="center">
+                <q> The computer programmer is a creator of universe for which he alone is the lawgiver.
+                <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                <br>field of battle and to command such unswervingly dutiful actors or troops.
+                </q>
+                <br>-Joseph Weizenbaum
+                <br>
+                <br>My name is Evelina Garcia. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                <br>
+                <br>Thanks for stopping by and enjoy!
+               </p> 
+            </strong>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="Images/image_1.jpg" alt="Multiple monitors">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <P>I am a software developer who loves to learn about coding! I enjoy spending time with 
+                my family and traveling.
+                <br>
+                <br>I am a graduate of <a href="https://www.learncodinganywhere.com/" target="blank">The Tech Academy</a>'s C# and
+                .NET Framework Boot Camp, and trained in the following web and programming languages: HTML, CSS,
+                JavaScript, SQL, and C#.
+                <br>
+                <br>I look forward to using my many years in education to help me transition into the tech industry
+                and would love to work with you in the future. <a href="#Contact">Contact</a>
+                me below!
+                </P>
+            </div>
+        </div>
+
+        <!--GITHUB SECTION-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:
+                <br>
+                <p class="center"><a href="https://github.com/egarcia8" target="blank">Evelina Garcia's GitHub</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/egarcia8" target="_blank"><img src="Images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="Images/Contact.jpg" alt="Contact">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data, here we are utilizing a 3rd party service-->
+                <form action="https://formspree.io/f/xwkzvjlv" method="post">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">    
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
