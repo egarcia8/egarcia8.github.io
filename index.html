@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    <!-- Head -->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -15,12 +17,13 @@
         <!--NAVBAR-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+             <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
-        <br>
-        <br>
         
         <!--BACKGROUND VIDEO-->
         <div id="Home">
@@ -36,17 +39,69 @@
             <h1 class="white-text">Evelina Garcia's Portfolio</h1>
             <strong>
                <p class="center">
-                <q> The computer programmer is a creator of universe for which he alone is the lawgiver.
-                <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                <br>field of battle and to command such unswervingly dutiful actors or troops.
-                </q>
-                <br>-Joseph Weizenbaum
-                <br>
-                <br>My name is Evelina Garcia. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                <br>
-                <br>Thanks for stopping by and enjoy!
+                    <q> The computer programmer is a creator of universe for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br>-Joseph Weizenbaum<br>
+                    <br>
+                    My name is Evelina Garcia. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br>Thanks for stopping by and enjoy!
                </p> 
             </strong>
+        </div>
+
+        <!-- Slideshow section added-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/profile_pic.jpg" alt="Picture of myself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="text">I am a full-stack software developer,<br>trained in:<br>HTML, CSS, Javascript</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, database and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="Images/Square_Custom_Picture.jpg" alt="Replace with a pictue of your choosing">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between teh slideshow images and the dots-->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow)-->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
         </div>
 
         <!--ABOUT SECTION-->
@@ -58,17 +113,17 @@
             <!--Right Column-->
             <div class="Column_1">
                 <h1>About</h1>
-                <P>I am a software developer who loves to learn about coding! I enjoy spending time with 
-                my family and traveling.
-                <br>
-                <br>I am a graduate of <a href="https://www.learncodinganywhere.com/" target="blank">The Tech Academy</a>'s C# and
-                .NET Framework Boot Camp, and trained in the following web and programming languages: HTML, CSS,
-                JavaScript, SQL, and C#.
-                <br>
-                <br>I look forward to using my many years in education to help me transition into the tech industry
-                and would love to work with you in the future. <a href="#Contact">Contact</a>
-                me below!
-                </P>
+                <p>I am a software developer who loves to learn about coding! I enjoy spending time with 
+                    my family and traveling.
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com/" target="blank">The Tech Academy</a>'s C# and
+                    .NET Framework Boot Camp, and trained in the following web and programming languages: HTML, CSS,
+                    JavaScript, SQL, and C#.
+                    <br>
+                    <br>I look forward to using my many years in education to help me transition into the tech industry
+                    and would love to work with you in the future. <a href="#Contact">Contact</a>
+                    me below!
+                </p>
             </div>
         </div>
 
@@ -78,8 +133,8 @@
             <div class="Column_1">
                 <h1>GitHub</h1>
                 <p>You can view my coding projects on my GitHub profile here:
-                <br>
-                <p class="center"><a href="https://github.com/egarcia8" target="blank">Evelina Garcia's GitHub</a></p>
+                    <br>
+                    <p class="center"><a href="https://github.com/egarcia8" target="blank">Evelina Garcia's GitHub</a></p>
                 </p>
             </div>
             <!--Right column-->
@@ -88,24 +143,22 @@
             </div>
         </div>
 
-        <!--CONTACT SECTION-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="Images/Contact.jpg" alt="Contact">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data, here we are utilizing a 3rd party service-->
-                <form action="https://formspree.io/f/xwkzvjlv" method="post">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">    
+        <!-- Contact Form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xwkzvjlv" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+                    <button type="submit" class="btn">SUBMIT</button>                        
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
@@ -117,5 +170,6 @@
                 <br>
             </p>
         </footer>
+        <script src="JS/portfolio.js"></script>
     </body>
 </html>
