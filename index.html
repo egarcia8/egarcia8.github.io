@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evelina Garcia Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arapey|Nunito|Poppins">
+    <link rel="icon" type="image/x-icon" href="Images/Icons/favicon.ico">
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/fe0ec15846.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebarHeader">
+                <img src="/Images/profile_pic.jpg" alt="mypic" width="110" height="110" class="rounded-circle" id="mypic">
+                <br>
+                <p class="text-center">Software Developer</p>
+            </div>
+            <div>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/evelina-garcia-dev/" target="_blank"><i class="fab fa-linkedin fa-xl"></i></a>
+                    <a href="https://github.com/egarcia8" target="_blank"><i class="fab fa-github fa-xl"></i></a>
+                    <a href="mailto: evelina.garcia.dev@gmail.com"><i class="fas fa-envelope fa-xl"></i></i></a>
+                </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#Home"> <i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#Projects"> <i class="fas fa-code"></i> Projects</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#contactFormModal">
+                            <i class="fas fa-phone"></i> Contact</button>
+                        <!-- <a href="" data-bs-target="contactFormModal" data-bs-toggle="modal"><i class="fas fa-phone"></i> Contact</a> -->
+                        <!-- <a href="#"> <i class="fa fa-phone"></i> Contact</a> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+         <!-- Contact Form Modal  -->
+        <div id="contactFormModal" class="modal fade" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="contactModalLabel">Contact Form</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form  action="https://formspree.io/f/xwkzvjlv" method="POST" id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                    <input type="text" placeholder="Enter your name" class="form-control" id="nameInput" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                    <input type="text" placeholder="Enter your phone number" class="form-control" id="phoneInput">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                    <input type="text" placeholder="Enter your email address" class="form-control" id="emailInput" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                    <input type="text" placeholder="Enter your message" class="form-control" id="messageInput">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>        
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-seconday" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-outline-primary">Submit Form</button> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Main Content  -->
+        <div id="main">
+        <h1 class="text-center py-5" id="Home">Evelina Garcia</h1>    
+            <div class="container-fluid">
+                <div class="row mt-3">
+                    <div class="col-lg-8">
+                        <h5 class="text-center">Hello and welcome to my portfolio!</h5>
+                            <p>I am a software developer with a passion for creating innovative and intuitive software solutions. I specialize in ASP.NET core, Javascript, Angular,
+                                and am alwasy eager to learn new technologies and programming languages to enhance my skillset.</p>
+                            <p>As a software developer, I am commited to delivering high-qulaity, maintainable, and efficient code that meets the needs of my clients. I am a 
+                                strong believer in the importance of communciation, and always strive to work closely with my clients to ensure that their requirements are met 
+                                and their expectations are exceeded.</p>  
+                            <p>When I'm not coding, I enjoy spending time with my family and traveling. I believe that a healthy work-like balance is essential for maintaining
+                                creativity and productivity, and I always make sure to to take time to recharge and pursue my passions outside of work.</p>
+                            <p>Thank you for taking time to view my portfolio, and I look forward to the opportunity to work with you on your next software project!</p> 
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-center">
+                        <div id="myCarousel carousel-dark" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="/Images/background-image.jpg" class="d-block w-100 carousel-pic" alt="...">
+                                <div class="carousel-caption d-md-block mb-4">
+                                    <p>I am an software developer, trained in:</p>
+                                  </div>
+                               </div>
+                               <div class="carousel-item">
+                                    <img src="Images/HTML_CSS_and_JavaScript.jpeg" class="d-block w-100 carousel-pic" alt="...">
+                                    <div class="carousel-caption d-md-block mb-4">
+                                        <p>HTML, CSS, JavaScript</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Images/C_Sharp_and_Dot_NET.png" class="d-block w-100 carousel-pic" alt="...">
+                                    <div class="carousel-caption d-md-block mb-4">
+                                        <p>C#, .NET Framework, ASP.NET, MVC</p>
+                                    </div>
+                               </div>
+                               <div class="carousel-item">
+                                    <img src="Images/SQL_and_Database.jpg" class="d-block w-100 carousel-pic" alt="...">
+                                    <div class="carousel-caption d-md-block mb-4">
+                                        <p>back end development, database and SQL.</p>
+                                    </div>
+                               </div>
+                               <div class="carousel-item">
+                                    <img src="Images/Square_Custom_Picture.jpg" class="d-block w-100 carousel-pic" alt="...">
+                                    <div class="carousel-caption d-md-block mb-4">
+                                        <p><a class="contact" onclick="openForm()">Contact me now!</a></p>
+                                    </div>
+                               </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="row d-flex justify-content-center" id="cards">
+                <h2 class="text-center my-5" id="Projects">Projects</h2>
+            </div>    
+                <div class="card-container">
+                    <div class="card card-block">
+                        <div class="card-count-container">
+                            <div class="card-count">1</div>
+                        </div>
+                    
+                        <div class="card-content">
+                            <h2>Word Search Generator</h2>
+                            Created an application using ASP.NET Core that allows a user to add words to a word search and randomly generate a word search
+                                puzzle in a given sized matrix. Words are placed horizontally, vertically, or diagonally.
+                        </div>
+                    
+                        <div class="card-footer">
+                            <a href="https://github.com/egarcia8/WordSearchGenerator" target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                    <div class="card-count-container">
+                        <div class="card-count">2</div>
+                    </div>
+                    <div class="card-content">
+                        <h2>Movie Database</h2>
+                        Created a data entry application to catalog movies using ASP.NET Core and utilizing custom APIs to execute CRUD operations.
+                            Also leveraged The Movie Database (TMDB) API to import movies to add to user's movie catalog.
+                    </div>
+                    
+                    <div class="card-footer">
+                        <a href="https://github.com/egarcia8/MovieDatabaseApplication" target="_blank">Source Code</a>
+                    </div>
+                    </div>
+                    
+                    <div class="card">
+                    <div class="card-count-container">
+                        <div class="card-count">3</div>
+                    </div>
+                    <div class="card-content">
+                        <h2>Angular Word Search</h2>
+                        Recreated the Word Search Generator utilizing Angular and leveraged Angular's extensive set of directives, such as ngIf and ngFor, 
+                        to enhance the dynamic rendering and behavior of the application's user interface.
+                    </div>
+                    
+                    <div class="card-footer">
+                        <a href="https://github.com/egarcia8/word-search-generator-Angular" target="_blank">Source Code</a>
+                    </div>
+                    </div>
+                </div>    
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
+
+  </body>
+</html>
