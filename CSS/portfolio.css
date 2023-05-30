@@ -197,7 +197,7 @@ a:focus {
   }
 
   .card-block {
-    flex: 1 1 auto;
+    flex: 1;
     padding: 10px;
   }
 
@@ -291,6 +291,10 @@ a:focus {
 @media (max-width: 983px) {
   .card-container {
     flex-wrap: wrap;
+   
+  }
+  .card-block {
+    flex: auto;
   }
   .card-container .card .card-content > h2 {
     font-size: 28px;
