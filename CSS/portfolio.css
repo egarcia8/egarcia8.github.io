@@ -54,15 +54,6 @@ a:focus {
     display: none;
 }
 
-/* #sidebar .sidebarHeader span{
-    display: none;
-}
-
-#sidebar.active .sidebarHeader span {
-    display: block;
-} */
-
-
 #sidebar.active p{
     display: none;
 }
@@ -93,15 +84,6 @@ a:focus {
  .icons i {
     padding: .25em;
  }
-
-/* #sidebar ul.components {
-    padding: 20px 0;
-} */
-
-/* #sidebar ul p {
-    color: #fff;
-    padding: 10px;
-} */
 
 #sidebar ul li a {
     padding: 10px;
